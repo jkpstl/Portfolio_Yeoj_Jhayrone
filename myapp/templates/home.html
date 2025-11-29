@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeoj & Jhayrone | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Y & J Developers</div>
+        <ul>
+            <li><a href="#team">The Team</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Welcome to Our Portfolio</h1>
+        <p>Created by Yeoj Mariano & Jhayrone Apostol</p>
+    </header>
+
+    <section id="team" class="container">
+        <h2>Meet the Developers</h2>
+        <div class="team-grid">
+            
+            <div class="card">
+                <div class="avatar-placeholder">IMG</div>
+                <h3>Yeoj Mariano</h3>
+                <p class="role">Backend Developer</p>
+                <p class="desc">
+                    [Ilagay dito ang short bio ni Yeoj. Halimbawa: Mahilig sa Python at database management.]
+                </p>
+                <a href="#" class="btn">View Profile</a>
+            </div>
+
+            <div class="card">
+                <div class="avatar-placeholder">IMG</div>
+                <h3>Jhayrone Apostol</h3>
+                <p class="role">Frontend Developer</p>
+                <p class="desc">
+                    [Ilagay dito ang short bio ni Jhayrone. Halimbawa: Mahilig sa UI/UX design at React.]
+                </p>
+                <a href="#" class="btn">View Profile</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Our Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>Description ng project niyo dito.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>Description ng project niyo dito.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yeoj & Jhayrone. Built with Django.</p>
+    </footer>
+
+</body>
+</html>
