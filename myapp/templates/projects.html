@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <a href="{% url 'home' %}" class="back-btn">← HOME</a>
+
+    <div class="glass-container">
+        <header>
+            <h1>OUR PROJECTS</h1>
+            <p class="subtitle">A showcase of our hard work</p>
+            <div class="line"></div>
+        </header>
+
+        <div class="project-grid">
+            
+            <div class="glass-card project-card">
+                <h2>Student Info System</h2>
+                <p class="tech-stack">Django | SQL | Bootstrap</p>
+                <p class="desc">Isang system na nagma-manage ng student records, grades, at enrollment process.</p>
+                <a href="#" class="btn-view small">View Code</a>
+            </div>
+
+            <div class="glass-card project-card">
+                <h2>E-Commerce Website</h2>
+                <p class="tech-stack">Python | React | Stripe API</p>
+                <p class="desc">Online shopping platform na may cart system at payment integration.</p>
+                <a href="#" class="btn-view small">View Demo</a>
+            </div>
+
+            <div class="glass-card project-card">
+                <h2>Portfolio V1</h2>
+                <p class="tech-stack">HTML | CSS | JavaScript</p>
+                <p class="desc">Ang pinakaunang version ng aming portfolio gamit ang vanilla web technologies.</p>
+                <a href="#" class="btn-view small">View Code</a>
+            </div>
+
+             <div class="glass-card project-card">
+                <h2>Inventory System</h2>
+                <p class="tech-stack">Django | PostgreSQL</p>
+                <p class="desc">Para sa monitoring ng stocks at sales ng isang small business.</p>
+                <a href="#" class="btn-view small">View Code</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

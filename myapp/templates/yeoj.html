@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeoj | Frontend Developer</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <a href="{% url 'home' %}" class="back-btn">← HOME</a>
+
+    <div class="glass-container profile-container">
+        
+        <div class="glass-card wide-card">
+            <div class="profile-header">
+                <div class="image-container large-img">
+                    <img src="{% static 'images/bart.jpg' %}" alt="Yeoj">
+                </div>
+                <div class="profile-info">
+                    <h1>Yeoj Mariano</h1>
+                    <p class="role">Frontend Developer</p>
+                    <p class="bio">
+                        "I bring designs to life." <br>
+                        Passionate about creating beautiful, interactive, and user-friendly interfaces. I ensure that the user experience is smooth and visually appealing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="skills-section">
+                <h3>Technical Skills</h3>
+                
+                <div class="skill">
+                    <span>HTML / CSS</span>
+                    <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                </div>
+                
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>UI / UX Design</span>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="btn-view">Roblox</a>
+                <a href="https://www.instagram.com/garciajoshuae/" class="btn-view">Instagram</a> <a href="https://www.instagram.com/garciajoshuae/" class="btn-view">TikTok</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

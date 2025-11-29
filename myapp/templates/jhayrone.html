@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhayrone | Backend Developer</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <a href="{% url 'home' %}" class="back-btn">← HOME</a>
+
+    <div class="glass-container profile-container">
+        
+        <div class="glass-card wide-card">
+            <div class="profile-header">
+                <div class="image-container large-img">
+                    <img src="{% static 'images/bart2.jpg' %}" alt="Jhayrone">
+                </div>
+                <div class="profile-info">
+                    <h1>Jhayrone Apostol</h1>
+                    <p class="role">Backend Developer</p>
+                    <p class="bio">
+                        "I build the engine that runs the web." <br>
+                        Specialized in server-side logic, database management, and ensuring high performance and responsiveness to requests from the front-end.
+                    </p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="skills-section">
+                <h3>Technical Skills</h3>
+                
+                <div class="skill">
+                    <span>Python / Django</span>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                </div>
+                
+                <div class="skill">
+                    <span>Database (SQL)</span>
+                    <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                </div>
+
+                <div class="skill">
+                    <span>API Development</span>
+                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="btn-view">GitHub</a>
+                <a href="https://mega-asia.com/archive/daniel-padilla-channels-his-old-role-in-this-new-photoshoot/" class="btn-view">Facebook</a> <a href="mailto:jhayrone@email.com" class="btn-view">Email</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
